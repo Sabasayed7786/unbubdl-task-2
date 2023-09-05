@@ -1,0 +1,68 @@
+.custom-pack {
+  text-align: center;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.chocolate-list {
+  display: grid; /* Use grid instead of flex */
+  grid-template-columns: repeat(6, 1fr); /* 6 columns for larger screens */
+  gap: 20px; /* Adjust the gap between chocolates */
+}
+
+.chocolate {
+  text-align: center;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 300px; /* Set a fixed height for chocolate cards */
+}
+
+.chocolate img {
+  width: 100%; /* Make each image fill its container */
+  height: auto;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 767px) {
+  .chocolate-list {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns per row on mobile */
+  }
+}
+
+
+.selected-chocolates {
+  margin-top: 20px;
+}
+
+.selected-chocolate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+ max-width: 600px;
+}
+
+.selected-chocolate button {
+  background-color: #ff4a4a; 
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.selected-chocolate button:hover {
+  background-color: #ff3333;
+}
